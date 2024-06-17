@@ -467,6 +467,9 @@ h6 {
 .display-4 {
     font-size: 3.5rem;
     font-weight: 300;
+    background: linear-gradient(45deg, #40A2E3, #0D9276);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 hr {
@@ -5593,6 +5596,9 @@ h5,
 h6 {
     font-family: Playfair Display, serif;
     color: #40A2E3;
+    /* background: linear-gradient(45deg, #40A2E3, #39d7ff, #0D9276); */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     font-weight: 700
 }
 
@@ -5609,7 +5615,7 @@ h6 {
 }
 
 .display-4 {
-    font-size: 2.6rem
+    font-size: 3.6rem
 }
 
 .h2,
@@ -8569,8 +8575,10 @@ div.nk-error {
     width: 20px;
     height: 18px;
     color: #fff;
-    transition: color 0.3s; /* Optional for a smooth transition */
+    transition: color 0.3s;
+    /* Optional for a smooth transition */
 }
+
 /* .nk-icon-burger.black {
     color: #000;
 } */
@@ -9833,4 +9841,46 @@ a:hover>.nk-icon-search:after {
 .nano:hover>.nano-pane {
     visibility: visible\9;
     opacity: .99
+}
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand .7s cubic-bezier(.215, .61, .355, 1.000) both;
+    animation: tracking-in-expand .7s cubic-bezier(.215, .61, .355, 1.000) both;
+    opacity: 0; /* Ensure element is initially hidden */
+}
+
+.tracking-in-expand .animate {
+    -webkit-animation: tracking-in-expand .7s cubic-bezier(.215, .61, .355, 1.000) both;
+    animation: tracking-in-expand .7s cubic-bezier(.215, .61, .355, 1.000) both;
+    opacity: 1; /* Ensure it becomes visible when animated */
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
 }
