@@ -467,7 +467,7 @@ h6 {
 .display-4 {
     font-size: 3.5rem;
     font-weight: 300;
-    background: linear-gradient(45deg, #40A2E3, #0D9276);
+    background: linear-gradient(45deg,#00538a, #40A2E3, #0D9276);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2080,12 +2080,12 @@ a.btn.disabled {
 
 .btn-success {
     color: #fff;
-    background-color: #5cb85c;
-    border-color: #5cb85c;
+    background-color: #0D9276;
+    /* border-color: #5cb85c; */
     width: auto;
     font-size: large;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-top: auto;
 
 }
@@ -2094,8 +2094,8 @@ a.btn.disabled {
 .btn-success:focus,
 .btn-success:hover {
     color: #fff;
-    background-color: #449d44;
-    border-color: #419641
+    background-color: #1f6858;
+    /* border-color: #419641 */
 }
 
 .btn-success.active,
@@ -5416,12 +5416,12 @@ body {
 }
 
 a {
-    color: #1140c9
+    color: #fff
 }
 
 a:focus,
 a:hover {
-    color: #0d319a
+    color: black;
 }
 
 ::-moz-selection {
