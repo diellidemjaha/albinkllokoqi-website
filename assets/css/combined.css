@@ -2094,7 +2094,7 @@ a.btn.disabled {
 .btn-success:focus,
 .btn-success:hover {
     color: #fff;
-    background-color: #1f6858;
+    background-color: #1a1a1a;
     /* border-color: #419641 */
 }
 
